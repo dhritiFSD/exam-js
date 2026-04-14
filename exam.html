@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style rel="stylesheet" href="exam.css"></style>
+</head>
+<body>
+    <h1>Product Managment</h1>
+    <div class="form">
+        <input type="text" id="div1" placeholder="Product title">
+        <input type="number" id="div2" placeholder="price">
+        <input type="text" id="div3" placeholder="Image">
+        <input type="text" id="div4" placeholder="category">    
+        <button onclick="addProduct()">Add product</button>
+    </div>
+    <div class="controls">
+        <input type="text" id="search" placeholder="search" onkeyup="displayProduct()">
+        <select id="filter" onchange="displayProducts()">
+            <option value="">All Categoriess</option>
+            <option value="electronics">electronics</option>
+            <option value="clothing">clothing</option>
+        </select>
+        <select id="sort" onchange="displayProduct()">
+            <option value="">sort</option>
+            <option value="low">Price low</option>
+            <option value="high">Price high</option>
+        </select>
+    </div>
+    <div id="Productlist"></div>
+    <script src="exam.js"></script>
+</body>
+</html>
